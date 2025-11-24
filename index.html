@@ -7,14 +7,13 @@
     <title>Ronit Singh | Portfolio</title>
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>PORTFOLIO</h1>
+        <nav class = "mainhead">
             <i class="fa-solid fa-bars" style="color: white;"></i>
+            <h1>PORTFOLIO</h1>
             <nav class="sidebar">
                 <h1>PORTFOLIO</h1>
                 <i class="fa-solid fa-xmark"></i>
@@ -43,16 +42,16 @@
 
     <main class="container">
         <section id="about" class="fade-in">
-            <div>
-                <nav>
-                    <p class="name">Hello! &nbsp;I’m<span>Ronit Singh </span></p>
-                    <img class="img1" src="images/ronit.jpg" alt="Ronit's photo" />
+            <div class="about-content">
+                <nav class="about-text">
+                    <p class="name">Hello! &nbsp;I’m <span>Ronit Singh </span></p>
+                    <img class="img1 mobile-only-img imgcommon" src="images/ronit.jpg" alt="Ronit's photo" />
                     <p class="para">I’m a 3rd-year BCA student with a strong interest in software development and web
                         technologies. Skilled in C++, Python, and MySQL, I’ve built several academic projects and
                         am actively improving my skills in DSA. I’m seeking internship opportunities to gain hands-on
                         experience and grow as a developer.</p>
                 </nav>
-                <img class="img" src="images/ronit.jpg" alt="Ronit's photo" />
+                <img class="img desktop-only-img imgcommon" src="images/ronit.jpg" alt="Ronit's photo" />
             </div>
             <button id="gettouch"><i class="fa-solid fa-envelope" style="margin-right: 14px;"></i>Get in touch</button>
         </section>
@@ -73,7 +72,6 @@
                 <div class="skill-category">
                     <h3>Frontend</h3>
                     <ul style="list-style: disc;">
-
                         <li>HTML</li>
                         <li>Pug</li>
                         <li>CSS</li>
@@ -89,7 +87,6 @@
                 <div class="skill-category">
                     <h3>Professional Skills</h3>
                     <ul style="list-style: disc;">
-
                         <li>Communication</li>
                         <li>Problem Solving</li>
                         <li>Creativity</li>
@@ -106,105 +103,64 @@
             <div class="project-grid">
                 <div class="card">
                     <div>
-                        <img id="img5" src="images/portfolioss.png" alt="ronit">
+                        <img id="img5" class="project-img" src="images/portfolioss.png" alt="ronit">
                         <h3>Portfolio</h3>
                         <p>I designed and developed a personal portfolio website to showcase my projects, skills, and
                             achievements. The site was built using HTML, CSS, and JavaScript with a responsive and
-                            professional layout. It includes smooth navigation, interactive sections, and dynamic
-                            elements to provide visitors with a clear overview of my work and a seamless browsing
-                            experience.
-                        </p>
-                        <ul style="font-size:12px; list-style: none; display:flex; margin: 12px;">
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                HTML</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                CSS</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                JavaScript</li>
+                            professional layout.</p>
+                        <ul class="tech-stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
-                        <a id="year0" href="#" target="_blank">LIVE</a>
+                        <a class="year0" href="#" target="_blank">LIVE</a>
                     </div>
                 </div>
                 <div class="card">
                     <div>
-                        <img id="img3" src="images/face.png" alt="ronit">
-                        <h3>Face Recognition Attendance System</h3>
+                        <img id="img3" class="project-img" src="images/face.png" alt="ronit">
+                        <h3>Face Recognition System</h3>
                         <p>I built a face recognition-based attendance system using the LBPH algorithm in OpenCV with a
-                            Tkinter GUI to register and train over 50 students for real-time facial detection and
-                            management. The system was integrated with a MySQL database to store and retrieve attendance
-                            logs, and it included features to detect duplicate faces and record timestamps accurately.
-                        </p>
-                        <ul style="font-size:12px; list-style: none; display:flex; margin: 12px;">
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                Python</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                OpenCV</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                Tkinter</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                MySQL</li>
+                            Tkinter GUI to register and train over 50 students.</p>
+                        <ul class="tech-stack">
+                            <li>Python</li>
+                            <li>OpenCV</li>
+                            <li>Tkinter</li>
+                            <li>MySQL</li>
                         </ul>
-                        <a id="year0" href="https://github.com/ronitsingh1234/SmartFaceAttendance"
+                        <a class="year0" href="https://github.com/ronitsingh1234/SmartFaceAttendance"
                             target="_blank">VIEW</a>
                     </div>
                 </div>
                 <div class="card">
                     <div>
-                        <img id="img4" src="images/dance.png" alt="ronit">
+                        <img id="img4" class="project-img" src="images/dance.png" alt="ronit">
                         <h3>Dance Academy Website </h3>
-                        <p>
-                            I created a web platform for a dance academy featuring session-based authentication for
-                            sign-up, login, and logout. The platform
-                            included course, class, and contact pages built with Pug templates, along with a
-                            mobile-friendly UI designed using HTML, CSS, and multimedia elements. It also managed
-                            backend operations for user data and enrollment through MySQL integration.</p>
-                        <ul style="font-size:12px; list-style: none; display:flex; margin: 12px;">
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                PUG</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                CSS</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                MySQL</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                Node.js</li>
+                        <p>I created a web platform for a dance academy featuring session-based authentication for
+                            sign-up, login, and logout.</p>
+                        <ul class="tech-stack">
+                            <li>PUG</li>
+                            <li>CSS</li>
+                            <li>MySQL</li>
+                            <li>Node.js</li>
                         </ul>
-                        <a id="year0"
+                        <a class="year0"
                             href="https://www.linkedin.com/posts/ronit-singh-10a9a72a7_webdevelopment-beginnerproject-nodejs-activity-7323365625882411008-tjE3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEoB9doBDChnNVWtnNYfqmL34dFCNmR0qlI"
                             target="_blank">VIEW</a>
                     </div>
                 </div>
                 <div class="card">
                     <div>
-                        <img id="img5" src="images/amazon.png" alt="ronit">
+                        <img id="img5" class="project-img" src="images/amazon.png" alt="ronit">
                         <h3>Amazon Clone</h3>
                         <p>I created a frontend Amazon Clone web application that replicates core e-commerce features
-                            such as product listings, a shopping cart, and a checkout page. The project was built using
-                            HTML, CSS, and JavaScript with a clean and desktop-optimized layout. It also included
-                            interactive navigation and dynamic product elements to provide a smooth browsing experience.
-                        </p>
-                        <ul style="font-size:12px; list-style: none; display:flex; margin: 12px;">
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                HTML</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                CSS</li>
-                            <li
-                                style=" color:white;margin: 0 10px; background:rgb(60, 60, 60); padding:5px 8px; border-radius:4px">
-                                JavaScript</li>
+                            such as product listings, a shopping cart, and a checkout page.</p>
+                        <ul class="tech-stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
                         </ul>
-                        <a id="year0" href="https://amazon-ui-clone-eight.vercel.app/" target="_blank">VIEW</a>
+                        <a class="year0" href="https://amazon-ui-clone-eight.vercel.app/" target="_blank">VIEW</a>
                     </div>
                 </div>
             </div>
@@ -214,37 +170,33 @@
             <h2>Education</h2>
             <div class="project-grid1">
                 <div class="card1">
-                    <div>
+                    <div class="edu-header">
                         <h3>Uttaranchal University</h3>
-                        <p id="location">Uttarakhand, India</p>
+                        <p class="location-text">Uttarakhand, India</p>
                     </div>
-                    <div>
-                        <p>Bacherlor of Computer Applications</p>
-                        <p>&nbsp;&nbsp;GPA: 9.13</p>
-                        <h4 id="year">2023 - 2026</h4>
+                    <div class="edu-details">
+                        <p>Bacherlor of Computer Applications (GPA: 9.13)</p>
+                        <h4 class="year-text">2023 - 2026</h4>
                     </div>
                 </div>
                 <div class="card1">
-                    <div>
+                    <div class="edu-header">
                         <h3>CBSE BOARD</h3>
-                        <p id="location">Uttarakhand, India</p>
+                        <p class="location-text">Uttarakhand, India</p>
                     </div>
-                    <div>
-                        <p>Intermediate (12th)</p>
-                        <p>&nbsp;Score: 89%</p>
-                        <h4 id="year">2022 - 2023</h4>
+                    <div class="edu-details">
+                        <p>High School (12th) - Score: 89%</p>
+                        <h4 class="year-text">2022 - 2023</h4>
                     </div>
-
                 </div>
                 <div class="card1">
-                    <div>
+                    <div class="edu-header">
                         <h3>CBSE BOARD</h3>
-                        <p id="location">Uttarakhand, India</p>
+                        <p class="location-text">Uttarakhand, India</p>
                     </div>
-                    <div>
-                        <p>High School (10th)</p>
-                        <p>&nbsp;Score: 92%</p>
-                        <h4 id="year">2020 - 2021</h4>
+                    <div class="edu-details">
+                        <p>High School (10th) - Score: 92%</p>
+                        <h4 class="year-text">2020 - 2021</h4>
                     </div>
                 </div>
             </div>
@@ -257,12 +209,9 @@
                     <div>
                         <img class="certificate-img" src="images/DBMS.png" alt="Certificate 1 Image">
                         <h3>Certificate in DBMS</h3>
-                        <p>
-                            Earned a certification in Database Management Systems, focusing on relational (SQL) and
-                            NoSQL concepts. I gained hands-on experience in database design, normalization, and writing
-                            complex SQL queries to manage data effectively.
-                        </p>
-                        <a id="year1"
+                        <p>Earned a certification in Database Management Systems, focusing on relational (SQL) and
+                            NoSQL concepts.</p>
+                        <a class="year1"
                             href="https://moonshot.scaler.com/s/sl/tDVzk8dVjD?_gl=1*q4ahet*_gcl_au*MzU1OTczMzQxLjE3NTYzOTY4MzY.*FPAU*MTE2Nzg1NDgxMy4xNzU2Mzk2ODM4*_ga*NjY1ODYxNjg3LjE3NTYzOTY4MzY.*_ga_53S71ZZG1X*czE3NTYzOTY4MzUkbzEkZzEkdDE3NTYzOTY4OTQkajEkbDAkaDEzMTAwMTI5NzU."
                             target="_blank">VIEW CREDENTIAL</a>
                     </div>
@@ -272,12 +221,9 @@
                     <div>
                         <img class="certificate-img" src="images/DSA.png" alt="Certificate 2 Image">
                         <h3>Data Structure in C++</h3>
-                        <p>
-                            Completed a certification in Data Structures & Algorithms, where I built and analyzed
-                            structures like arrays, trees, and graphs. The course focused on applying sorting and
-                            searching algorithms to write efficient code and improve my problem-solving skills.
-                        </p>
-                        <a id="year1"
+                        <p>Completed a certification in Data Structures & Algorithms, where I built and analyzed
+                            structures like arrays, trees, and graphs.</p>
+                        <a class="year1"
                             href="https://moonshot.scaler.com/s/sl/C4K2pFIZsJ?_gl=1*9hx5z5*_gcl_au*MzU1OTczMzQxLjE3NTYzOTY4MzY.*FPAU*MTE2Nzg1NDgxMy4xNzU2Mzk2ODM4*_ga*NjY1ODYxNjg3LjE3NTYzOTY4MzY.*_ga_53S71ZZG1X*czE3NTYzOTY4MzUkbzEkZzEkdDE3NTYzOTY4OTQkajEkbDAkaDEzMTAwMTI5NzU."
                             target="_blank">VIEW CREDENTIAL</a>
                     </div>
@@ -287,12 +233,9 @@
                     <div>
                         <img class="certificate-img" src="images/paticipation.png" alt="Certificate 3 Image">
                         <h3>Naukri Campus: Techquezt # 22</h3>
-                        <p>
-                            Received a certificate for active participation in "Techquezt # 22," an event by Naukri
-                            Campus that explored professional coding culture and the day-to-day life of a software
-                            developer.
-                        </p>
-                        <a id="year1"
+                        <p>Received a certificate for active participation in "Techquezt # 22," an event by Naukri
+                            Campus.</p>
+                        <a class="year1"
                             href="https://www.naukri.com/campus/certificates/participation/v0/68873431fac35327673de645"
                             target="_blank">VIEW CREDENTIAL</a>
                     </div>
@@ -300,39 +243,10 @@
 
                 <div class="card">
                     <div>
-                        <img class="certificate-img" src="images/codesummit.jpg" alt="Certificate 3 Image">
-                        <h3>Participation in Code Summit 2024</h3>
-                        <p>
-                            I competed in Code Summit 2024, a national-level coding competition hosted by Dr. D. Y.
-                            Patil's Ramrao Adik Institute of Technology. This certificate was awarded for my successful
-                            participation and enthusiastic effort in the first round of the event.
-                        </p>
-                        <a id="year1" href="#" target="_blank">VIEW CREDENTIAL</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <img class="certificate-img" src="images/uscs.png" alt="Certificate 3 Image">
-                        <h3>Programmer's Day Tech Excellence Event - BYTE 2024 </h3>
-                        <p>
-                            I participated in BYTE 2024, a tech excellence event organized by the Uttaranchal School of
-                            Computing Sciences, Uttaranchal University. This certificate was awarded for my successful
-                            participation in the event, which was held on the occasion of Programmer's Day.
-                        </p>
-                        <a id="year1" href="#" target="_blank">VIEW CREDENTIAL</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
                         <img class="certificate-img" src="images/codekeboss.png" alt="Certificate 3 Image">
-                        <h3>Participant, Code Ke Boss (IT-UTSAV 2024)</h3>
-                        <p>
-                            I participated in IT-UTSAV 2024, a technology festival organized by the Uttaranchal School
-                            of Computing Sciences, Uttaranchal University. This certificate was awarded for my
-                            successful participation in the "Code Ke Boss" event, held on April 18th, 2024.
-                        </p>
-                        <a id="year1" href="#" target="_blank">VIEW CREDENTIAL</a>
+                        <h3>Code Ke Boss (IT-UTSAV 2024)</h3>
+                        <p>I participated in IT-UTSAV 2024, a technology festival organized by Uttaranchal University.</p>
+                        <a class="year1" href="#" target="_blank">VIEW CREDENTIAL</a>
                     </div>
                 </div>
             </div>
@@ -341,15 +255,19 @@
         <section id="contact" class="fade-in">
             <h2>Get In Touch</h2>
             <p>Have a question or want to work together? I'd love to hear from you.</p>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ronitsingh9568@gmail.com" target="_blank">
-                <button class="emailme"><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>Email
-                    me</button></a>
-            <a href="mailto:ronitsingh9568@gmail.com" target="_blank">
-                <button class="emailme2"><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>Email
-                    me</button></a>
-            <a href="tel:+918445356705">
-                <button class="callme"><i class="fa-solid fa-phone"></i>Call me</button></a>
-            <div>
+            
+            <div class="contact-buttons-container">
+                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ronitsingh9568@gmail.com" target="_blank">
+                    <button class="emailme"><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>Email
+                        me</button></a>
+                <a href="mailto:ronitsingh9568@gmail.com" target="_blank" class="mobile-email-link">
+                    <button class="emailme2"><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>Email
+                        me</button></a>
+                <a href="tel:+918445356705">
+                    <button class="callme"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i>Call me</button></a>
+            </div>
+
+            <div class="social-icons">
                 <a class="email1" href="https://mail.google.com/mail/?view=cm&fs=1&to=ronitsingh9568@gmail.com"
                     target="_blank">
                     <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i></a>
@@ -379,4 +297,3 @@
 </body>
 
 </html>
-
